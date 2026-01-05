@@ -2,7 +2,6 @@ import os
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-# Load the same embeddings used during ingestion
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -25,3 +24,4 @@ print("\nRESULTS:\n")
 for doc in results:
     print(doc.page_content)
     print("-" * 80)
+
