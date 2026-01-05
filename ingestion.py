@@ -19,4 +19,5 @@ embeddings = HuggingFaceEmbeddings(
 vectorstore = FAISS.from_documents(chunks, embeddings)
 vectorstore.save_local("faiss_index")
 
-print("✅ PDFs ingested and indexed successfully")
+print("PDFs ingested and indexed successfully")
+
